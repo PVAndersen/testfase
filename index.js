@@ -44,7 +44,7 @@ function onLoad(){
 
 function onDeviceReady(){
 		(refreshDeviceList(){
-		setTimeout(arguments.callee, 5000);
+		//setTimeout(arguments.callee, 3000);
 }
 
  }
