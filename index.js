@@ -16,6 +16,9 @@ function stringToBytes(string) {
     return array.buffer;
 }
 
+    var rooms = ["DVKTEST1", "DVKTEST2"];
+
+
 // this is ble hm-10 UART service
 /*var blue= {
     serviceUUID: "0000FFE0-0000-1000-8000-00805F9B34FB",
@@ -57,7 +60,24 @@ function refreshDeviceList(){
 function onDiscoverDevice(device){
 	//Make a list in html and show devises
 	
-	if (device.name == "DVKTEST1") { 
+	//var i;
+
+	//for (i = 0; i < rooms.lenght; i++) {	
+
+	var testRoom = device.name;
+	switch (testRoom) {
+
+			case "DVKTEST1":
+				window.location.href = 'test.html';
+			break;
+			
+		case "DVKTEST2":
+				window.location.href = 'test2.html';
+			break;
+
+}		
+
+	/*	if (device.name == rooms[0]) { 
 
 	var listItem = document.createElement('li'),
 		html = device.name+ "," + device.id;
