@@ -43,20 +43,16 @@ function onLoad(){
 }
 
 function onDeviceReady(){
-	setTimeout (refreshDeviceList(){
-	window.location.reload(1);	
-
-}, 10000);
+		(refreshDeviceList(){
+		setTimeout(arguments.callee, 5000);
 }
- /*function onDeviceReady(){
-	setTimeout (refreshDeviceList(){
-	window.location.reload(1);	
 
-}, 10000);
+ }
 }*/
 	 
 function refreshDeviceList(){
 	//deviceList =[];
+    
 	document.getElementById("bleDeviceList").innerHTML = ''; // empties the list
 	if (cordova.platformId === 'android') { // Android filtering is broken
 		ble.scan([], 5, onDiscoverDevice, onError);
