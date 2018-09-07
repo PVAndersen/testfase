@@ -34,7 +34,7 @@ var deviceList =[];
  
 function onLoad(){
 	document.addEventListener('deviceready', onDeviceReady, false);
-    //bleDeviceList.addEventListener('touchstart', conn, false); // assume not scrolling
+    bleDeviceList.addEventListener('touchstart', conn, false); // assume not scrolling
 }
 
 function onDeviceReady(){
@@ -60,12 +60,9 @@ function onDiscoverDevice(device){
 		html = device.name+ "," + device.id;
 		listItem.innerHTML = html;
 		document.getElementById("bleDeviceList").appendChild(listItem);
-
-
-
 }
 
-/*
+
 function conn(){
 	var  deviceTouch= event.srcElement.innerHTML;
 	document.getElementById("debugDiv").innerHTML =""; // empty debugDiv
@@ -115,5 +112,5 @@ function onDisconnect(){
 function onError(reason)  {
 	alert("ERROR: " + reason); // real apps should use notification.alert
 }
-*/
+
 	
