@@ -41,14 +41,20 @@ function onLoad(){
 
 	
 }
+var refreshTimer = setInterval(myTimer ,20000);
+function myTimer() {
+    
+    refreshDeviceList();
 
-function onDeviceReady(){
-		(refreshDeviceList(){
-		//setTimeout(arguments.callee, 3000);
+
 }
 
+function onDeviceReady(){
+		refreshDeviceList()
+		
+
  }
-}*/
+
 	 
 function refreshDeviceList(){
 	//deviceList =[];
