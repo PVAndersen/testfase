@@ -61,13 +61,13 @@ function onDiscoverDevice(device){
 		listItem.innerHTML = html;
 		document.getElementById("bleDeviceList").appendChild(listItem);
 
-	if  (document.getElementById("bleDeviceList" == 'DVKTEST1'){
+	/*if  (document.getElementById("bleDeviceList" == 'DVKTEST1'){
 		
 		window.open("test.html");
 		
 
 		}
-	else onDeviceReady();
+	else onDeviceReady();  */
 }
 
 
