@@ -57,14 +57,14 @@ function refreshDeviceList(){
 function onDiscoverDevice(device){
 	//Make a list in html and show devises
 	
-	if (device.name == "DVKTEST1","DVKTEST2") { 
+	if (device.name == "DVKTEST1") { 
 
 	var listItem = document.createElement('li'),
 		html = device.name+ "," + device.id;
 		listItem.innerHTML = html;
 		document.getElementById("bleDeviceList").appendChild(listItem);
 
-	//window.location.href = 'test.html';	
+	window.location.href = 'test.html';	
 
 	}
 	/*if  (document.getElementById("bleDeviceList" == 'DVKTEST1'){
