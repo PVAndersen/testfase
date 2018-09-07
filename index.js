@@ -57,7 +57,7 @@ function refreshDeviceList(){
 function onDiscoverDevice(device){
 	//Make a list in html and show devises
 	
-	if (device.name == "DVKTEST1 || DVKTEST2") { 
+	if (device.name == "DVKTEST1") { 
 
 	var listItem = document.createElement('li'),
 		html = device.name+ "," + device.id;
