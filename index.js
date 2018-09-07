@@ -34,7 +34,7 @@ var deviceList =[];
  
 function onLoad(){
 	document.addEventListener('deviceready', onDeviceReady, false);
-    bleDeviceList.addEventListener('touchstart', conn, false); // assume not scrolling
+    //bleDeviceList.addEventListener('touchstart', conn, false); // assume not scrolling
 }
 
 function onDeviceReady(){
@@ -46,10 +46,10 @@ function refreshDeviceList(){
 	//deviceList =[];
 	document.getElementById("bleDeviceList").innerHTML = ''; // empties the list
 	if (cordova.platformId === 'android') { // Android filtering is broken
-		ble.scan([], 15, onDiscoverDevice, onError);
+		ble.scan([], 5, onDiscoverDevice, onError);
 	} else {
 		//alert("Disconnected");
-		ble.scan([blue.serviceUUID], 15, onDiscoverDevice, onError);
+		ble.scan([blue.serviceUUID], 5, onDiscoverDevice, onError);
 	}
 }
 
