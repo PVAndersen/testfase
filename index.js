@@ -56,11 +56,17 @@ function refreshDeviceList(){
 
 function onDiscoverDevice(device){
 	//Make a list in html and show devises
-		var listItem = document.createElement('li'),
+	
+	if (device.name == "DVKTEST1") { 
+
+	var listItem = document.createElement('li'),
 		html = device.name+ "," + device.id;
 		listItem.innerHTML = html;
 		document.getElementById("bleDeviceList").appendChild(listItem);
 
+	window.location.href = 'test.html';	
+
+	}
 	/*if  (document.getElementById("bleDeviceList" == 'DVKTEST1'){
 		
 		window.open("test.html");
@@ -68,6 +74,15 @@ function onDiscoverDevice(device){
 
 		}
 	else onDeviceReady();  */
+	if  (document.getElementById("listItem" == 'DVKTEST1'){
+		
+		window.open("test.html");
+		
+
+		}
+	else onDeviceReady();  
+
+
 }
 
 
