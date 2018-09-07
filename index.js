@@ -67,6 +67,7 @@ function onDiscoverDevice(device){
 		
 
 		}
+	else onDeviceReady();
 }
 
 
