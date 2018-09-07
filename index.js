@@ -64,7 +64,7 @@ function onDiscoverDevice(device){
 		listItem.innerHTML = html;
 		document.getElementById("bleDeviceList").appendChild(listItem);
 
-	window.location.href = 'test.html';	
+	//window.location.href = 'test.html';	
 
 	}
 	/*if  (document.getElementById("bleDeviceList" == 'DVKTEST1'){
@@ -74,13 +74,7 @@ function onDiscoverDevice(device){
 
 		}
 	else onDeviceReady();  */
-	if  (document.getElementById("listItem" == 'DVKTEST1'){
-		
-		window.open("test.html");
-		
-
-		}
-	else onDeviceReady();  
+	
 
 
 }
