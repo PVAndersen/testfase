@@ -60,7 +60,7 @@ function onDeviceReady(){
 	 
 function refreshDeviceList(){
 	//deviceList =[];
-    document.getElementById("test4").innerHTML = '';
+    
 	document.getElementById("bleDeviceList").innerHTML = ''; // empties the list
 	if (cordova.platformId === 'android') { // Android filtering is broken
 		ble.scan([], 5, onDiscoverDevice, onError);
@@ -71,16 +71,6 @@ function refreshDeviceList(){
 }
 
 
-function blueToothList(){
-
-/*var listItem = document.createElement('li'),
-		html = device.name+ "," + device.id;
-		listItem.innerHTML = html;
-		document.getElementById("bleDeviceList").appendChild(listItem);*/
-
-		//document.getElementById("test4").innerHTML += device.name + "<br>";
-
-}
 
 
 function onDiscoverDevice(device){
