@@ -39,7 +39,7 @@ function onLoad(){
 	document.addEventListener('deviceready', onDeviceReady, false);
     bleDeviceList.addEventListener('touchstart', conn, false); // assume not scrolling
 
-	
+	blueToothList();
 }
 //var refreshTimer = 
 setInterval(myTimer ,10000);
@@ -60,7 +60,7 @@ function onDeviceReady(){
 	 
 function refreshDeviceList(){
 	//deviceList =[];
-    
+    document.getElementById("test4").innerHTML = '';
 	document.getElementById("bleDeviceList").innerHTML = ''; // empties the list
 	if (cordova.platformId === 'android') { // Android filtering is broken
 		ble.scan([], 5, onDiscoverDevice, onError);
@@ -73,11 +73,12 @@ function refreshDeviceList(){
 
 function blueToothList(){
 
-var listItem = document.createElement('li'),
+/*var listItem = document.createElement('li'),
 		html = device.name+ "," + device.id;
 		listItem.innerHTML = html;
-		document.getElementById("bleDeviceList").appendChild(listItem);
+		document.getElementById("bleDeviceList").appendChild(listItem);*/
 
+		document.getElementById("test4").innerHTML += device.name + "<br>";
 
 }
 
@@ -89,18 +90,20 @@ function onDiscoverDevice(device){
 
 	//for (i = 0; i < rooms.lenght; i++) {	
 
+	
+
 	var testRoom = device.name;
 	switch (testRoom) {
 
 			case "DVKTEST1":
 				window.location.href = 'test.html';
 				//blueToothList();
-				document.getElementById("test4").innerHTML += device.name + "<br>";
+				
 			break;
 			
 		case "DVKTEST2":
 				window.location.href = 'test2.html';
-				document.getElementById("test4").innerHTML += device.name + "<br>";
+				
 			break;
 
 	}
