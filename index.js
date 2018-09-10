@@ -42,7 +42,7 @@ function onLoad(){
 	
 }
 //var refreshTimer = 
-setInterval(myTimer ,30000);
+setInterval(myTimer ,10000);
 
 function myTimer() {
     
