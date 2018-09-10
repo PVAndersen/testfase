@@ -89,8 +89,8 @@ function onDiscoverDevice(device){
 	//var i;
 
 	//for (i = 0; i < rooms.lenght; i++) {	
-
 	
+	document.getElementById("test4").innerHTML += device.name + "<br>";
 
 	var testRoom = device.name;
 	switch (testRoom) {
