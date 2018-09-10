@@ -89,16 +89,13 @@ function onDiscoverDevice(device){
 				window.location.href = 'test2.html';
 			break;
 
-}		
-
-	/*	if (device.name == rooms[0]) { 
-
+	
 	var listItem = document.createElement('li'),
 		html = device.name+ "," + device.id;
 		listItem.innerHTML = html;
 		document.getElementById("bleDeviceList").appendChild(listItem);
 
-	window.location.href = 'test.html';	
+	
 
 	}
 	/*if  (document.getElementById("bleDeviceList" == 'DVKTEST1'){
