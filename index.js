@@ -94,18 +94,14 @@ function onDiscoverDevice(device){
 
 			case "DVKTEST1":
 				window.location.href = 'test.html';
-				blueToothList();
+				//blueToothList();
+				document.getElementById("test4").innerHTML += device.name + "<br>";
 			break;
 			
 		case "DVKTEST2":
 				window.location.href = 'test2.html';
-				blueToothList();
+				document.getElementById("test4").innerHTML += device.name + "<br>";
 			break;
-
-	
-	
-
-	
 
 	}
 	/*if  (document.getElementById("bleDeviceList" == 'DVKTEST1'){
