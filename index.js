@@ -41,11 +41,13 @@ function onLoad(){
 
 	
 }
-var refreshTimer = setInterval(myTimer ,20000);
+//var refreshTimer = 
+setInterval(myTimer ,30000);
+
 function myTimer() {
     
     refreshDeviceList();
-
+	
 
 }
 
