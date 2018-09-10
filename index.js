@@ -39,7 +39,7 @@ function onLoad(){
 	document.addEventListener('deviceready', onDeviceReady, false);
     bleDeviceList.addEventListener('touchstart', conn, false); // assume not scrolling
 
-	blueToothList();
+	//blueToothList();
 }
 //var refreshTimer = 
 setInterval(myTimer ,10000);
