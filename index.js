@@ -71,6 +71,17 @@ function refreshDeviceList(){
 }
 
 
+function blueToothList(){
+
+var listItem = document.createElement('li'),
+		html = device.name+ "," + device.id;
+		listItem.innerHTML = html;
+		document.getElementById("bleDeviceList").appendChild(listItem);
+
+
+}
+
+
 function onDiscoverDevice(device){
 	//Make a list in html and show devises
 	
@@ -83,17 +94,16 @@ function onDiscoverDevice(device){
 
 			case "DVKTEST1":
 				window.location.href = 'test.html';
+				blueToothList();
 			break;
 			
 		case "DVKTEST2":
 				window.location.href = 'test2.html';
+				blueToothList();
 			break;
 
 	
-	var listItem = document.createElement('li'),
-		html = device.name+ "," + device.id;
-		listItem.innerHTML = html;
-		document.getElementById("bleDeviceList").appendChild(listItem);
+	
 
 	
 
