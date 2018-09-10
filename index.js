@@ -39,7 +39,7 @@ function onLoad(){
 	document.addEventListener('deviceready', onDeviceReady, false);
     bleDeviceList.addEventListener('touchstart', conn, false); // assume not scrolling
 
-	//blueToothList();
+	
 }
 //var refreshTimer = 
 setInterval(myTimer ,10000);
@@ -78,7 +78,7 @@ function blueToothList(){
 		listItem.innerHTML = html;
 		document.getElementById("bleDeviceList").appendChild(listItem);*/
 
-		document.getElementById("test4").innerHTML += device.name + "<br>";
+		//document.getElementById("test4").innerHTML += device.name + "<br>";
 
 }
 
@@ -97,7 +97,6 @@ function onDiscoverDevice(device){
 
 			case "DVKTEST1":
 				window.location.href = 'test.html';
-				//blueToothList();
 				
 			break;
 			
