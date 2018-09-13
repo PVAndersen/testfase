@@ -86,7 +86,7 @@ function onDiscoverDevice(device){
 	switch (testRoom) {
 
 			case "DVKTEST1":
-				window.location.href = 'test.html';
+				window.location.href = 'test1.html';
 				
 			break;
 			

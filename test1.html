@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<title>DVK-IT-Solutions</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="format.css" >
+<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+ 
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>Nationalmuseet</b></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#exo" class="w3-bar-item w3-button">EXO</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="simpel_room.PNG" alt="Architecture" width="1500" height="800">
+  <!--<div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BR</b></span> <span class="w3-hide-small w3-text-light-grey">Architects</span></h1>
+  </div>-->
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div id="exo">
+  <div class="w3-container w3-padding-32" id="exohd">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">EXO</h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Adam's Creation</div>
+        <img id="adam" src="adam.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">School of Athens</div>
+        <img id="athens" src="athen.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Last Supper</div>
+        <img src="Last_Supper.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Mona Lisa</div>
+        <img src="mona_lisa.jpg" alt="House" style="width: 100%">
+      </div>
+    </div>
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Solvognen</div>
+        <img src="Solvogn.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Vikingehjelme</div>
+        <img src="g3-oldtid-natmus.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+  
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Smukker og Skåle</div>
+        <img src="g4-oldtid-natmus.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Mosefund</div>
+        <img src="g5-oldtid-natmus.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+<!-- The Modal -->
+<div id="adam_modal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p><h1>Adams Skabelse</h1>
+      <img src="adam.jpg" alt="House" style="width:100%">
+      Adams skabelse er et udsnit af loftudsmykningen i Det Sixtinske Kapel og er den mest kendte af freskerne, der blev malet af Michelangelo ca. 1511.<BR> 
+      Det illustrerer skabelsesberetningen i Bibelens Første Mosebog, hvor Gud ånder liv i det første menneske, Adam.<BR>
+      Gennemgående malede Michelangelo meget robuste og atletiske kroppe, og det er værd at bemærke, at Gud og Adams skikkelser har samme kropstype. <BR>
+      Det stemmer overens med Bibelens ord, hvor der står: "Gud sagde: 'Lad os skabe mennesker i vort billede, så de ligner os!'" (1. Mosebog, 1.26).<BR>
+      Billedet af Guds og Adams hænder, der næsten mødes, er blevet gengivet i talløse efterligninger og karikaturer. <BR>
+      Sammen med Leonardo da Vincis Den sidste Nadver, er Adams skabelse og de øvrige malerier i Det Sixtinske Kapel de religiøse malerier, der oftest er blevet gengivet<BR></p>
+  </div>
+
+</div>
+<div id="athens_modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p><h1>School Of Athens</h1>
+        <img src="athen.jpg" alt="House" style="width:100%">
+        The School of Athens (Italian: Scuola di Atene) is a fresco by the Italian Renaissance artist Raphael. <BR>
+        It was painted between 1509 and 1511 as a part of Raphael's commission to decorate the rooms now known as the Stanze di Raffaello, in the Apostolic Palace in the Vatican. <BR>
+        The Stanza della Segnatura was the first of the rooms to be decorated, and The School of Athens, representing Philosophy, was probably the third painting to be finished there, <BR>
+        after La Disputa (Theology) on the opposite wall, and the Parnassus (Literature).<BR>
+        The picture has long been seen as "Raphael's masterpiece and the perfect embodiment of the classical spirit of the Renaissance".<BR></p>
+    </div>
+  
+  </div>
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+
+
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body {font-family: Arial, Helvetica, sans-serif;}
+  
+  /* The Modal (background) */
+  .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+      position: relative;
+      background-color: #fefefe;
+      margin: auto;
+      padding: 0;
+      border: 1px solid #888;
+      width:100%;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+      -webkit-animation-name: animatetop;
+      -webkit-animation-duration: 0.4s;
+      animation-name: animatetop;
+      animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+      from {top:-300px; opacity:0} 
+      to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+      from {top:-300px; opacity:0}
+      to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+      color: white;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  
+  .modal-header {
+      padding: 2px 16px;
+      background-color: #5cb85c;
+      color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+      padding: 2px 16px;
+      background-color: #5cb85c;
+      color: white;
+  }
+  </style>
+  </head>
+  <body>
+
+  <script>
+  // Get the modal
+  var adam_modal = document.getElementById('adam_modal');
+  var athens_modal =document.getElementById('athens_modal')
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("adam");
+  var athens=document.getElementById('athens')
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+      adam_modal.style.display = "block";
+  }
+  athens.onclick = function() {
+      athens_modal.style.display = "block";
+  }
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+      adam_modal.style.display = "none";
+      athens_modal.style.display="none";
+  }
+  
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == adam_modal) {
+          adam_modal.style.display = "none";
+      }
+      if (event.target == athens_modal) {
+          athens_modal.style.display = "none";
+      }
+  }
+  </script>
+  
+  </body>
+  </html>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+
+</body>
+</html>
