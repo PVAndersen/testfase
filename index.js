@@ -90,7 +90,7 @@ function onDiscoverDevice(device){
 				
 			break;
 			
-		case "DVKTEST2":
+			case "DVKTEST2":
 				window.location.href = 'test2.html';
 				
 			break;
